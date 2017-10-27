@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +14,51 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6M-Od-Cev">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZV6-8W-Ivt">
+                                        <rect key="frame" x="33" y="45" width="254" height="254"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="254" id="DeM-zF-BQr"/>
+                                            <constraint firstAttribute="width" constant="254" id="kcg-92-Iel"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Darien Duong" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpe-c2-IVO">
+                                        <rect key="frame" x="63" y="346" width="194" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ZV6-8W-Ivt" firstAttribute="top" secondItem="i6M-Od-Cev" secondAttribute="top" constant="45" id="MZZ-OR-NX3"/>
+                                    <constraint firstItem="ZV6-8W-Ivt" firstAttribute="centerX" secondItem="i6M-Od-Cev" secondAttribute="centerX" id="bO4-gD-pJb"/>
+                                    <constraint firstItem="Mpe-c2-IVO" firstAttribute="top" secondItem="ZV6-8W-Ivt" secondAttribute="bottom" constant="47" id="gFh-Zk-hpL"/>
+                                    <constraint firstItem="Mpe-c2-IVO" firstAttribute="centerX" secondItem="i6M-Od-Cev" secondAttribute="centerX" id="xjO-rl-0pt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i6M-Od-Cev" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="HIc-6n-UL2"/>
+                            <constraint firstItem="i6M-Od-Cev" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QVa-6y-wXl"/>
+                            <constraint firstItem="i6M-Od-Cev" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gW9-go-mFf"/>
+                            <constraint firstItem="i6M-Od-Cev" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="obJ-3A-usK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="366" height="366"/>
+    </resources>
 </document>
